@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: object-sans;
+  src: url(../fonts/object-sans/ObjectSans-Bold.eot);
+  src: url(../fonts/object-sans/ObjectSans-Bold.ttf);
+  src: url(../fonts/object-sans/ObjectSans-Bold.woff);
+  src: url(../fonts/object-sans/ObjectSans-Bold.woff2);
+}
+@font-face {
+  font-family: nato-sans-reg;
+  src: url(../fonts/nato-sans-reg/NotoSans.eot);
+  src: url(../fonts/nato-sans-reg/NotoSans.ttf);
+  src: url(../fonts/nato-sans-reg/NotoSans.woff);
+  src: url(../fonts/nato-sans-reg/NotoSans.woff2);
+}
+@font-face {
+  font-family: nato-sans-bold;
+  src: url(../fonts/nato-sans-bold/NotoSans-Bold.eot);
+  src: url(../fonts/nato-sans-bold/NotoSans-Bold.ttf);
+  src: url(../fonts/nato-sans-bold/NotoSans-Bold.woff);
+  src: url(../fonts/nato-sans-bold/NotoSans-Bold.woff2);
+}
+@theme {
+  --breakpoint-sm: 0px;
+  --breakpoint-md: 480px;
+  --breakpoint-lg: 720px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+}
+
+
+@media screen and (min-width: 0) {
+  .card:nth-child(n+7) { display: block; display: none; } /* Hide extra cards beyond 6 for lg */
+}
+@media screen and (min-width: 480px) {
+  .card:nth-child(n+7) { display: block; display: none; } /* Hide extra cards beyond 6 for lg */
+}
+@media screen and (min-width: 720px) {
+  .card:nth-child(n+7) { display: block; display: none; } /* Hide extra cards beyond 6 for lg */
+}
+@media screen and (min-width: 1200px) {
+  .card:nth-child(n+9) { display: block; } /* Hide extra cards beyond 6 for lg */
+}
+@media screen and (min-width: 1400px) {
+  .card:nth-child(n+1) { display: grid; } /* Hide extra cards beyond 6 for lg */
+}
+
