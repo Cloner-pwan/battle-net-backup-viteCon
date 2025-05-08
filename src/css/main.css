@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
 
 @font-face {
   font-family: object-sans;
@@ -21,6 +23,7 @@
   src: url(../fonts/nato-sans-bold/NotoSans-Bold.woff);
   src: url(../fonts/nato-sans-bold/NotoSans-Bold.woff2);
 }
+
 @theme {
   --breakpoint-sm: 0px;
   --breakpoint-md: 480px;
@@ -29,20 +32,34 @@
   --breakpoint-2xl: 1400px;
 }
 
+@layer components {
+}
 
 @media screen and (min-width: 0) {
-  .card:nth-child(n+7) { display: block; display: none; } /* Hide extra cards beyond 6 for lg */
+  .card:nth-child(n + 7) {
+    display: block;
+    display: none;
+  } /* Hide extra cards beyond 6 for lg */
 }
 @media screen and (min-width: 480px) {
-  .card:nth-child(n+7) { display: block; display: none; } /* Hide extra cards beyond 6 for lg */
+  .card:nth-child(n + 7) {
+    display: block;
+    display: none;
+  } /* Hide extra cards beyond 6 for lg */
 }
 @media screen and (min-width: 720px) {
-  .card:nth-child(n+7) { display: block; display: none; } /* Hide extra cards beyond 6 for lg */
+  .card:nth-child(n + 7) {
+    display: block;
+    display: none;
+  } /* Hide extra cards beyond 6 for lg */
 }
 @media screen and (min-width: 1200px) {
-  .card:nth-child(n+9) { display: block; } /* Hide extra cards beyond 6 for lg */
+  .card:nth-child(n + 9) {
+    display: block;
+  } /* Hide extra cards beyond 6 for lg */
 }
 @media screen and (min-width: 1400px) {
-  .card:nth-child(n+1) { display: grid; } /* Hide extra cards beyond 6 for lg */
+  .card:nth-child(n + 1) {
+    display: grid;
+  } /* Hide extra cards beyond 6 for lg */
 }
-
