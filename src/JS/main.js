@@ -2,17 +2,12 @@ import recommended from "./components/recommended";
 import recommendedGetter from "./functions/recommendedGetter";
 import Rootwriter from "./functions/rootwriter";
 import navbar from "./components/navbar.js";
+import hamburgerMenu from "./functions/hamburgerMenu.js";
+import panelItems from "./functions/panel_items.js";
 
 // Rootwriter(navbar,recommended);
 // recommendedGetter();
+hamburgerMenu();
+panelItems();
 
-const hamburgerMenu = document.querySelector("#hamburgerMenubtn");
-const hamburgerMenuItems = document.querySelector("#hamburgerMenuItems");
-const closeBtnTimes = document.querySelector("#closeBtnTimes");
-hamburgerMenu.addEventListener("click", () => {
-  hamburgerMenuItems.style.left = "0";
-});
 
-closeBtnTimes.addEventListener("click", () => {
-    hamburgerMenuItems.style.left = "-100%";
-});
