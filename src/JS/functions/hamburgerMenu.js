@@ -4,11 +4,13 @@ let hamburgerMenu = () => {
   const closeBtnTimes = document.querySelector("#closeBtnTimes");
 
   hamburgerMenu.addEventListener("click", () => {
-    hamburgerMenuItems.style.left = "0";
+    hamburgerMenuItems.classList.remove("left-[-100%]");
+    hamburgerMenuItems.classList.add("left-[0]");
   });
 
   closeBtnTimes.addEventListener("click", () => {
-    hamburgerMenuItems.style.left = "-100%";
+    hamburgerMenuItems.classList.remove("left-[0]");
+    hamburgerMenuItems.classList.add("left-[-100%]");
   });
 };
 

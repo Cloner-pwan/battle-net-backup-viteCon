@@ -8,7 +8,7 @@ let recommendedGetter = async () => {
         <p class="text-[12px] text-[#ffffffB8] font-[object-sans]"> ${elem.gameName} </p>
         <p class="title text-[16px] text-[#ffffffD6] font-[object-sans]">${elem.title}</p>
         <p class="desc text-[12px] text-[#ffb400] font-[nato-sans-reg] line-clamp-2">${elem.desc}</p>
-        <p class="category text-[12px] text-[#ffffffB8] font-[nato-sans-reg]">${elem.category}</p>
+        <p class="category text-[12px] text-[#ffffffB8] font-[nato-sans-reg]">${elem.Category}</p>
         <div class="price w-full h-fit mt-4 flex justify-between items-center absolute bottom-2 left-0 px-6">
           <p class="text-[16px] text-[#6cdb00] font-[object-sans] inline-block">${elem.price}</p>
           <div class="discount w-[45.38px] h-[20.5px] bg-[#6CDB00] rounded-[4px] flex justify-center
