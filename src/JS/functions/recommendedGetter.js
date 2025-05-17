@@ -1,10 +1,11 @@
 let recommendedGetter = async () => {
-  let req = await fetch("http://localhost:3001/games");
-  let res = await req.json();
-  let data = res.map((elem) => {
-    return `<div class="card w-[300px] h-[400px] bg-[#292b33] cursor-pointer flex flex-col">
+  try {
+    let req = await fetch("http://localhost:3001/games");
+    let res = await req.json();
+    let data = res.map((elem) => {
+      return `<div class="card w-[300px] h-[400px] bg-[#292b33] cursor-pointer flex flex-col">
       <img src="${elem.image}" alt="pic" class="w-full h-[169.19px]">
-      <div class="w-full h-[230.42px] p-6 flex flex-col gap-2 hover:bg-[#383b45] duration-300 relative group">
+      <div class="w-full h-[230.42px] p-6 flex flex-col gap-2 hover:bg-[#383b45] hover:rounded-b-lg duration-300 relative group">
         <p class="text-[12px] text-[#ffffffB8] group-hover:translate-y-[-5px] duration-300 font-[object-sans]"> ${elem.gameName} </p>
         <p class="title text-[16px] text-[#ffffffD6] font-[object-sans] group-hover:translate-y-[-5px] duration-300">${elem.title}</p>
         <p class="desc text-[12px] text-[#ffb400] font-[nato-sans-reg] line-clamp-2 group-hover:translate-y-[-5px] duration-300">${elem.desc}</p>
@@ -17,9 +18,12 @@ let recommendedGetter = async () => {
         </div>
     </div>
     </div>`;
-  });
-  document
-    .querySelector("#recommendedGames")
-    .insertAdjacentHTML("beforeend", data.join(""));
+    });
+    document
+      .querySelector("#recommendedGames")
+      .insertAdjacentHTML("beforeend", data.join(""));
+  } catch (error) {
+    console.log("Error: ", error);
+  }
 };
 export default recommendedGetter;
