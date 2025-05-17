@@ -8,9 +8,9 @@ import accountBtn from "./functions/accountMenu.js";
 
 Rootwriter(navbar,recommended);
 hamburgerMenu();
-panelItems();
 accountBtn();
-// recommended => should be inside the rootWriter
+panelItems();
 recommendedGetter();
+// recommended => should be inside the rootWriter
 
 
