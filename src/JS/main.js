@@ -8,15 +8,20 @@ import header from "./components/header.js";
 import activation from "./functions/searchBar.js";
 import menuBar from "./components/menu_bar.js";
 import scroll from "./functions/scroll.js";
+import logic from "./functions/slider_logic.js";
+import slides from "./functions/slides.js";
+import slider from "./components/slider.js";
 
 Rootwriter(recommended);
 scroll();
 menuBar();
 hamburgerMenu();
 accountBtn();
+slider();
+slides().then(() => {
+    logic();
+});
 panelItems();
 recommendedGetter();
 activation();
 // recommended => should be inside the rootWriter
-
-
