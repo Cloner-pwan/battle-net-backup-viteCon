@@ -1,11 +1,14 @@
 let trendingGetter = async () => {
   try {
     function discount(price) {
-      if (price == "Play For Free") {
+      if (typeof price !== "string" || price.trim() === "Play For Free") {
         return null;
-      } else {
-        return parseFloat(Math.trunc(price.replace("$", "")));
       }
+      let numericPrice = parseFloat(price.replace("$", ""));
+      if (isNaN(numericPrice)) {
+        return null;
+      }
+      return Math.trunc(numericPrice);
     }
     let req = await fetch("http://localhost:3001/games");
     let res = await req.json();
@@ -48,7 +51,7 @@ let trendingGetter = async () => {
       .querySelector("#trendingGames")
       .insertAdjacentHTML("beforeend", data.join(""));
   } catch (error) {
-    console.log(`Error occured: ${error}`);
+    console.log(`Error occured: ${error} `);
   }
 };
 

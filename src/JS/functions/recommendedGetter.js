@@ -1,11 +1,14 @@
 let recommendedGetter = async () => {
    function discount(price) {
-    if (price == "Play For Free") {
-      return null;
-    } else {
-      return parseFloat(Math.trunc(price.replace("$", "")));
+      if (typeof price !== "string" || price.trim() === "Play For Free") {
+        return null;
+      }
+      let numericPrice = parseFloat(price.replace("$", ""));
+      if (isNaN(numericPrice)) {
+        return null;
+      }
+      return Math.trunc(numericPrice);
     }
-  }
   try {
     let req = await fetch("http://localhost:3001/games");
     let res = await req.json();
