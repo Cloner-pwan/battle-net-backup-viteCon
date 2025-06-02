@@ -12,8 +12,11 @@ import slides from "./functions/slides.js";
 import slider from "./components/slider.js";
 import searchMenu from "./components/searchMenu.js";
 import header from "./components/header.js";
-
-Rootwriter(header,recommended);
+import feature from "./components/featured.js";
+import featuredGetter from "./functions/featuredGetter.js";
+import trending from "./components/trendingNow.js";
+import trendingGetter from "./functions/trendingGetter.js";
+Rootwriter(header,recommended,feature,trending);
 scroll();
 menuBar();
 searchMenu();
@@ -26,4 +29,6 @@ slides().then(() => {
 panelItems();
 recommendedGetter();
 activation();
+featuredGetter()
+trendingGetter();
 // recommended => should be inside the rootWriter
