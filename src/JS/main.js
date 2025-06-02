@@ -16,7 +16,9 @@ import feature from "./components/featured.js";
 import featuredGetter from "./functions/featuredGetter.js";
 import trending from "./components/trendingNow.js";
 import trendingGetter from "./functions/trendingGetter.js";
-Rootwriter(header,recommended,feature,trending);
+import mostGifted from "./components/mostGifted.js";
+import mostGiftedGetter from "./functions/mostGiftedGetter.js";
+Rootwriter(header,recommended,feature,trending,mostGifted);
 scroll();
 menuBar();
 searchMenu();
@@ -31,4 +33,5 @@ recommendedGetter();
 activation();
 featuredGetter()
 trendingGetter();
+mostGiftedGetter();
 // recommended => should be inside the rootWriter
