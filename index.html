@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="src/css/main.css" type="text/css">
-  <script src="./src/JS/main.js" type="module" defer ></script>
-</head>
-<!-- grid => grid-col-[value} grid-row-[value] items:row-span-[value] items:col-span-[value] grid-flow-[value] -->
-<body class="bg-[#15171E]">
-  <!-- bottom part #22242c top #1a1c23 -->
-
-  <div id="root"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/main.css" type="text/css" />
+    <script src="./src/JS/main.js" type="module" defer></script>
+  </head>
+  <!-- grid => grid-col-[value} grid-row-[value] items:row-span-[value] items:col-span-[value] grid-flow-[value] -->
+  <body class="bg-[#15171E]">
+    <!-- bottom part #22242c top #1a1c23 -->
+    <div id="root"></div>
+    <div class="laptopFooter_container w-full h-[567px] bg-[url('../img/laptop-background.png')] bg-no-repeat mt-[60px] flex justify-center items-center py-[64px] px-[40px] bg-cover">
+      <div class="main_content_container w-[1400px] max-w-[1400px] h-[439px]  grid grid-cols-2 gap-20 place-items-center">
+        <div class="laptop_content w-[792px] h-[439px] flex justify-center items-center">
+          <img src="./src/img/laptop.png" alt="laptop pic" class="w-full h-full">
+        </div>
+        <div class="text-format 2xl:w-[528px] xl:w-[428px] h-[300px] grid grid-rows-3">
+          <div class="heading_text w-full h-fit place-self-end">
+            <p class="2xl:text-[48px] xl:text-[32px] text-[#fff] font-[object-sans]">Dive into adventure</p>
+            <p class="2xl:text-[20px] xl:text-[18px] text-[#ffffffB8] font-[nato-sans-reg]">Download Battle.net and join a community of millions.</p>
+          </div>
+          <div class="btns_container w-full h-fit place-self-end flex flex-wrap gap-2">
+              <a href="#" class="w-[283.5px] h-10 bg-[#0074e0] text-[16px] text-[object-sans] font-bold font-[#fff] py-1.5 px-8 col-span-1 rounded-sm flex justify-center items-center gap-2 duration-300
+              border-2 border-transparent hover:border-[#2290ff]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="w-5 h-5" viewBox="0 0 32 32" version="1.1">
+<title>microsoft</title>
+<path d="M16.742 16.742v14.253h14.253v-14.253zM1.004 16.742v14.253h14.256v-14.253zM16.742 1.004v14.256h14.253v-14.256zM1.004 1.004v14.256h14.256v-14.256z"/>
+                </svg>
+                Download for Windows</a>
+            <a href="#" class="w-[155.5px] h-[40px] bg-[#2A2D31] place-self-center flex justify-center items-center rounded-sm text-[16px] text-white font-[object-sans] duration-300 border-1 border-transparent hover:border-[#878787]">Learn More</a>
+          </div>
+          <div class="available w-full h-fit place-self-end">
+            <p class="text-[16px] text-[#ffffffB8] font-[nato-sans-reg]">Also available for <a href="#" class="text-[#148eff] underline underline-offset-4">Mac</a> and <a href="#" class="text-[#148eff] underline underline-offset-4">mobile</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
