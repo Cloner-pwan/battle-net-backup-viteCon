@@ -1,5 +1,5 @@
 let slides = async () => {
-  let req = await fetch("http://localhost:3000/header");
+  let req = await fetch("https://cloner-pwan.github.io/api-battle-net-slider/db.json");
   let res = await req.json();
   let data = res.map((elem) => {
     return `<div class="slide w-full h-full absolute duration-300">

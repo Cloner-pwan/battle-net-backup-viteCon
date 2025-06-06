@@ -10,7 +10,7 @@ let mostGiftedGetter = async () => {
     }
     return Math.trunc(numericPrice);
   }
-  let req = await fetch("http://localhost:3001/games");
+  let req = await fetch("https://cloner-pwan.github.io/api-battle-net/db.json");
   let res = await req.json();
   let filterGames = res.filter(
     (gifted) => Number(gifted.id) > 30 && Number(gifted.id) <= 40

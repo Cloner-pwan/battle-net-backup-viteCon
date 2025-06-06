@@ -10,7 +10,7 @@ let recommendedGetter = async () => {
       return Math.trunc(numericPrice);
     }
   try {
-    let req = await fetch("http://localhost:3001/games");
+    let req = await fetch("https://cloner-pwan.github.io/api-battle-net/db.json");
     let res = await req.json();
     let filteredGames = res.filter((recommended) => Number(recommended.id) > 0 && Number(recommended.id) <= 10
     );
