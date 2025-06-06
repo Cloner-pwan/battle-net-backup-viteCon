@@ -1,7 +1,7 @@
 let laptop_footer = `<div class="laptopFooter_container w-full 2xl:h-[567px] xl:h-[567px] lg:h-[567px] md:h-[840px] bg-[url('../img/laptop-background.png')] bg-no-repeat bg-center mt-[60px] flex justify-center items-center py-[64px] px-[40px] bg-cover">
       <div class="main_content_container w-[1400px] max-w-[1400px] h-[439px] grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 2xl:grid-row-1 xl:grid-rows-1 lg:grid-rows-1 md:grid-rows-[auto_auto] sm:grid-rows-2 2xl:gap-20
       md:gap-2 sm:gap-10 place-items-center">
-        <div class="laptop_content 2xl:w-[792px] 2xl:h-[439px] xl:w-[692px] xl:h-[389px] lg:w-[592px] lg:h-[350px] flex justify-center items-center 2xl:order-none xl:order-none lg:order-none md:order-last sm:order-last">
+        <div class="laptop_content 2xl:w-[792px] 2xl:h-[439px] xl:w-[692px]  xl:h-[389px] lg:w-[592px] lg:h-[350px] md:w-[500px] md:h-[300px] flex justify-center items-center 2xl:order-none xl:order-none lg:order-none md:order-last sm:order-last">
           <img src="./src/img/laptop.png" alt="laptop pic" class="w-full h-full">
         </div>
         <div class="text-format 2xl:w-[528px] xl:w-[428px] lg:w-[328px] md:w-[428px] sm:w-[390px] h-[300px] grid grid-rows-3">
