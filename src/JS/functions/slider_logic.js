@@ -72,7 +72,7 @@ let logic = () => {
   });
 
   let bullets = slides.map((elem, index) => {
-    return `<div class="bullet w-[30px] h-1.5 bg-[#d5d7dd] rounded-sm duration-300" data-id=${index}></div>`;
+    return `<div class="bullet 2xl:w-[30px] xl:w-[30px] lg:w-[26px] md:w-[24px] sm:w-[22px] h-1.5 bg-[#d5d7dd] rounded-sm duration-300" data-id=${index}></div>`;
   });
 
   pagination.insertAdjacentHTML("beforeend", bullets.join(""));
